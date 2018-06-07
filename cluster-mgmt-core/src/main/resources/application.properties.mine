@@ -1,0 +1,11 @@
+com.level11data.databricks.client.token =${databricks.client.token}
+com.level11data.databricks.client.username=${databricks.client.username}
+com.level11data.databricks.client.password=${databricks.client.password}
+com.level11data.databricks.client.url=${databricks.client.url}
+
+#spring.datasource.url=jdbc:mysql://localhost:3306/cluster_service
+#spring.datasource.driver-class-name= com.mysql.jdbc.Driver
+#spring.datasource.username= root
+#spring.datasource.password= root
+#spring.datasource.url=
+#spring.datasource.url=

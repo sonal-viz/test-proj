@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: ${mysql.url}
+    driver-class-name: com.mysql.jdbc.Driver
+    username: ${mysql.username}
+    password: ${mysql.password}
+    testOnBorrow: true
+    validationQuery: SELECT 1
+    maximumPoolSize: 50
+    minimum-idle: 5
+    max-lifetime: 20000000
+    connection-timeout: 3000000
+    idle-timeout: 30000
+    pool-name: SpringBootHikariCP
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.cache.use_second_level_cache: true
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: false
+      hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
